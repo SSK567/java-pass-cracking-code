@@ -1,0 +1,23 @@
+
+public class PasswordCracker {
+
+    static String targetPassword = "abc";  // the password to "crack"
+    static String characters = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^^&*()_+|"}?><,./;'][\=-]"; // character set
+
+    public static void main(String[] args) {
+        bruteForce("");
+    }
+
+    public static void bruteForce(String guess) {
+        if (guess.equals(targetPassword)) {
+            System.out.println("Password found: " + guess);
+            System.exit(0);
+        }
+
+        if (guess.length() >= 5) return; // limit guess length to 5 characters
+
+        for (int i = 0; i < characters.length(); i++) {
+            bruteForce(guess + characters.charAt(i));
+        }
+    }
+}
