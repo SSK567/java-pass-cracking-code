@@ -1,8 +1,7 @@
-
 public class PasswordCracker {
 
-    static String targetPassword = "abc";  // the password to "crack"
-    static String characters = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^^&*()_+|"}?><,./;'][\=-]"; // character set
+    static String targetPassword = "user passs";  // the password to "crack"
+    static String characters = "abcdefghijklmnopqrstuvwxyz12345678"; // character set
 
     public static void main(String[] args) {
         bruteForce("");
