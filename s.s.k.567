@@ -1,6 +1,6 @@
 public class PasswordCracker {
 
-    static String targetPassword = "user passs";  // the password to "crack"
+    static String targetPassword = "user pass";  // the password to "crack"
     static String characters = "abcdefghijklmnopqrstuvwxyz1234567890-+"; // character set
 
     public static void main(String[] args) {
